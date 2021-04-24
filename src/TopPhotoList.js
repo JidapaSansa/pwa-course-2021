@@ -1,9 +1,8 @@
-
 import './App.css'
 import{Link} from 'react-router-dom'
-function App({children}) {
+function TopPhotolist({children}) {
   return (
-    <div className="TopHead">
+    <div  className="TopHead2">
       <div className ="Link-Top">
       <div className ="link-margin">
       <Link to="/">
@@ -34,13 +33,6 @@ function App({children}) {
                 </Link>
       </div>
       <div className ="link-margin">
-      <Link to="/present">
-                  <button>
-                        <img src="Presentation.png" alt="Present" width="30" height="30"></img>
-                  </button>
-                  </Link>
-      </div>
-      <div className ="link-margin">
       <Link to="/photo-list">
                   <button>
                   <img src="Photo.png" alt="ThePhotoList" width="30" height="30"></img>
@@ -54,25 +46,13 @@ function App({children}) {
                   </button>
                   </Link>
       </div>
-      <div className = "link-margin">
-        <div className= "magin-Logo">
-          <img src="CatLogo.png" alt="Link-List"  width="40" height="40"></img>
-          </div>
-      </div>
-      <div className = "link-margin">  
-      <div className= "magin-Text"> 
-      <img src="TextLogo.png" alt="Link-List"  width="100" height="40"></img>
-      </div>     
-         
-      </div>
-
         </div>
        <div className="App-content">
          {children}
        </div>
     </div>
-    
+   
   );
 }
 
-export default App;
+export default TopPhotolist;
